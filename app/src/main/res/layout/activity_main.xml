@@ -7,11 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/tv_labelEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/email_label"
+        android:text="@string/label_email"
         android:textSize="16sp"
         android:layout_marginBottom="8dp"
         android:layout_centerHorizontal="true"
@@ -23,7 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_labelEmail"
-        android:hint="@string/email_hint"
+        android:hint="@string/hint_email"
+
         android:inputType="textEmailAddress"
         android:padding="6dp"
         android:layout_marginBottom="16dp"
@@ -31,10 +33,10 @@
 
     <!-- Метка для пароля -->
     <TextView
-        android:id="@+id/labelPassword"
+        android:id="@+id/tv_labelPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/password_label"
+        android:text="@string/label_password"
         android:textSize="16sp"
         android:layout_below="@id/et_inputEmail"
         android:layout_marginBottom="8dp"
@@ -42,11 +44,11 @@
 
     <!-- Поле для ввода пароля -->
     <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/et_inputPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/labelPassword"
-        android:hint="@string/password_hint"
+        android:layout_below="@id/tv_labelPassword"
+        android:hint="@string/hint_password"
         android:inputType="textPassword"
         android:padding="6dp"
         android:layout_marginBottom="16dp"
@@ -54,12 +56,12 @@
 
     <!-- Кнопка "Войти" -->
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/btn_Login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/inputPassword"
-        android:text="@string/login_button"
-        android:background="@color/purple_200"
+        android:layout_below="@id/et_inputPassword"
+        android:text="@string/button_login"
+        android:background="@color/black"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"/>
 
