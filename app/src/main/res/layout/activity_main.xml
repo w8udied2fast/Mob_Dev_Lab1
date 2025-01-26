@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,12 +8,60 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_labelEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Helloo World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/email_label"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Поле для ввода email -->
+    <EditText
+        android:id="@+id/et_inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_labelEmail"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        android:padding="6dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Метка для пароля -->
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_label"
+        android:textSize="16sp"
+        android:layout_below="@id/et_inputEmail"
+        android:layout_marginBottom="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Поле для ввода пароля -->
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelPassword"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:padding="6dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Кнопка "Войти" -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputPassword"
+        android:text="@string/login_button"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
