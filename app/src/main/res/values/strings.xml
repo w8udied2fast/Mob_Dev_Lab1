@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab1</string>
+    <string name="app_name">Проба</string>
     <string name="label_email">Email:</string>
     <string name="label_password">Пароль:</string>
     <string name="button_login">Войти</string>
@@ -9,4 +9,7 @@
     <string name="hint_password">Введите пароль</string>
     <string name="button_back">Назад</string>
     <string name="authorization">Авторизация</string>
+    <string name="say_my_name_hint">Say my name</string>
+    <string name="next_button">-></string>
+    <string name="wrong_name_message">Меня зовут не %s</string>
 </resources>
